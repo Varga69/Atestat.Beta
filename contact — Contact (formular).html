@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CurticiGym — Contact</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <a href="index — Acasă (introducere + istoric).html" class="logo">Curtici<span>Gym</span></a>
+    <button class="hamburger" aria-label="Meniu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav>
+      <a href="index — Acasă (introducere + istoric).html">Acasă</a>
+      <a href="categorii — Categorii _ Clase.html">Categorii</a>
+      <a href="galerie — Galerie foto_video.html">Galerie</a>
+      <a href="evenimente — Evenimente & Competiții.html">Evenimente</a>
+      <a href="echipament — Echipament & Materiale.html">Echipament</a>
+      <a href="istoric — Istorie detaliată.html">Istoric</a>
+      <a href="contact — Contact (formular).html" class="active">Contact</a>
+    </nav>
+  </header>
+
+  <aside class="sidebar">
+    <div>
+      <p class="sidebar-title">Pe această pagină</p>
+      <ul id="sidebar-anchors"></ul>
+    </div>
+    <div>
+      <p class="sidebar-title">Cronologie</p>
+      <ul class="timeline">
+        <li>
+          <div class="timeline-year">2024</div>
+          <div class="timeline-text">Proiect CurticiGym — conceput ca atestat la informatică, clasa a XII-a.</div>
+        </li>
+        <li>
+          <div class="timeline-year">2025</div>
+          <div class="timeline-text">Lansarea site-ului static CurticiGym, dedicat culturismului în România și SUA.</div>
+        </li>
+        <li>
+          <div class="timeline-year">Viitor</div>
+          <div class="timeline-text">Extinderea conținutului cu interviuri, tutoriale video și pagini de sportivi locali.</div>
+        </li>
+      </ul>
+    </div>
+  </aside>
+
+  <main>
+
+    <div class="page-title">
+      <p class="page-label">CurticiGym / Contact</p>
+      <h1>Contact</h1>
+      <div class="accent-line"></div>
+      <p>
+        Ai o întrebare, o sugestie sau dorești să contribui cu informații la proiect?
+        Completează formularul de mai jos și vom reveni cât mai curând.
+      </p>
+    </div>
+
+    <!-- SECȚIUNEA 1: Informații proiect -->
+    <section>
+      <h2 id="despre-proiect">Despre proiect</h2>
+      <div class="card-grid">
+        <div class="card">
+          <h3>👤 Autor</h3>
+          <p>
+            <strong>Varga Edmund</strong><br>
+            Clasa a XII-a, profil Matematică-Informatică<br>
+            Atestat la Informatică — 2025
+          </p>
+        </div>
+        <div class="card">
+          <h3>🎯 Scopul proiectului</h3>
+          <p>
+            Site web static realizat ca lucrare de atestat, cu scopul de a prezenta culturismul
+            ca sport, inclusiv istoricul său în România și SUA, categoriile de concurs,
+            echipamentul și evenimentele principale.
+          </p>
+        </div>
+        <div class="card">
+          <h3>💻 Tehnologii folosite</h3>
+          <p>
+            <strong>HTML5</strong> — structura paginilor<br>
+            <strong>CSS3</strong> — stilizare cu variabile CSS<br>
+            <strong>JavaScript Vanilla</strong> — funcționalități interactive<br>
+            <strong>Google Fonts</strong> — fontul Merriweather
+          </p>
+        </div>
+        <div class="card">
+          <h3>📚 Surse principale</h3>
+          <p>
+            IFBB Official Website, Wikipedia (EN/RO),
+            Federația Română de Culturism și Fitness (FRCF),
+            Arnold Sports Festival Official, NPC News Online
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECȚIUNEA 2: Formular de contact -->
+    <section>
+      <h2 id="formular-contact">Trimite un mesaj</h2>
+      <p>
+        Completează câmpurile de mai jos. Câmpurile marcate cu <span style="color:var(--accent)">*</span>
+        sunt obligatorii.
+      </p>
+
+      <!-- Formularul de contact — validat de funcția initContactForm() din script.js -->
+      <form id="contact-form" novalidate>
+
+        <!-- Câmp Nume -->
+        <div class="form-group">
+          <label for="camp-nume">Nume complet <span style="color:var(--accent)">*</span></label>
+          <input
+            type="text"
+            id="camp-nume"
+            name="nume"
+            placeholder="ex. Ion Popescu"
+            autocomplete="name"
+          />
+          <!-- Mesajul de eroare, afișat de JS dacă câmpul este gol -->
+          <span class="field-error" id="eroare-nume">
+            ⚠ Te rugăm să introduci numele tău complet.
+          </span>
+        </div>
+
+        <!-- Câmp Email -->
+        <div class="form-group">
+          <label for="camp-email">Adresă de email <span style="color:var(--accent)">*</span></label>
+          <input
+            type="email"
+            id="camp-email"
+            name="email"
+            placeholder="ex. ion.popescu@email.com"
+            autocomplete="email"
+          />
+          <span class="field-error" id="eroare-email">
+            ⚠ Te rugăm să introduci o adresă de email validă (ex. nume@domeniu.ro).
+          </span>
+        </div>
+
+        <!-- Câmp Telefon (opțional) -->
+        <div class="form-group">
+          <label for="camp-telefon">Telefon <span style="color:var(--text-muted);font-size:0.75em">(opțional)</span></label>
+          <input
+            type="tel"
+            id="camp-telefon"
+            name="telefon"
+            placeholder="ex. 07XX XXX XXX"
+            autocomplete="tel"
+          />
+        </div>
+
+        <!-- Câmp Subiect -->
+        <div class="form-group">
+          <label for="camp-subiect">Subiect</label>
+          <select id="camp-subiect" name="subiect">
+            <option value="">— Selectează un subiect —</option>
+            <option value="intrebare">Întrebare despre conținut</option>
+            <option value="sugestie">Sugestie sau corecție</option>
+            <option value="colaborare">Propunere de colaborare</option>
+            <option value="feedback">Feedback general</option>
+            <option value="altele">Altele</option>
+          </select>
+        </div>
+
+        <!-- Câmp Mesaj -->
+        <div class="form-group">
+          <label for="camp-mesaj">Mesajul tău <span style="color:var(--accent)">*</span></label>
+          <textarea
+            id="camp-mesaj"
+            name="mesaj"
+            placeholder="Scrie mesajul tău aici... (minimum 10 caractere)"
+            rows="6"
+          ></textarea>
+          <span class="field-error" id="eroare-mesaj">
+            ⚠ Mesajul trebuie să conțină cel puțin 10 caractere.
+          </span>
+        </div>
+
+        <!-- Buton de trimitere -->
+        <button type="submit" class="btn">
+          Trimite mesajul →
+        </button>
+
+        <!-- Mesaj de confirmare afișat după trimitere reușită -->
+        <div class="form-success" id="mesaj-succes">
+          ✅ Mesajul tău a fost trimis cu succes! Îți mulțumim pentru feedback.
+        </div>
+
+      </form>
+    </section>
+
+    <!-- SECȚIUNEA 3: Informații suplimentare -->
+    <section>
+      <h2 id="informatii-suplimentare">Informații suplimentare</h2>
+      <div class="intro-box">
+        <p>
+          Acest site a fost creat exclusiv în scopuri educaționale, ca parte a lucrării de
+          atestat la informatică. Informațiile prezentate sunt documentate din surse publice
+          și nu au scop comercial. Imaginile folosite provin din domeniu public (Wikipedia
+          Commons) sau sunt placeholder-e generate în CSS.
+        </p>
+      </div>
+
+      <h3>Notă privind funcționalitatea formularului</h3>
+      <p>
+        Formularul de contact de pe această pagină este <strong>funcțional din punct de vedere
+        al validării</strong> (verifică câmpurile și afișează erori sau confirmare), dar
+        <strong>nu trimite efectiv date</strong> către un server, deoarece site-ul este static
+        și rulează local, fără backend. Aceasta este o limitare specifică proiectelor de atestat
+        statice — pentru un site real, s-ar integra un serviciu de email (EmailJS, Formspree etc.).
+      </p>
+
+      <h3>Resurse externe recomandate</h3>
+      <ul>
+        <li><a href="https://www.ifbb.com" target="_blank" rel="noopener">IFBB Official — ifbb.com</a></li>
+        <li><a href="https://www.npcnewsonline.com" target="_blank" rel="noopener">NPC News Online</a></li>
+        <li><a href="https://ro.wikipedia.org/wiki/Culturism" target="_blank" rel="noopener">Wikipedia RO — Culturism</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Mr._Olympia" target="_blank" rel="noopener">Wikipedia EN — Mr. Olympia</a></li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer>
+    <span class="footer-logo">Curtici<span>Gym</span></span>
+    <span>&copy; 2025 Varga Edmund — Atestat Informatică, Clasa a XII-a</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

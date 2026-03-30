@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CurticiGym — Galerie foto/video</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <a href="index — Acasă (introducere + istoric).html" class="logo">Curtici<span>Gym</span></a>
+    <button class="hamburger" aria-label="Meniu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav>
+      <a href="index — Acasă (introducere + istoric).html">Acasă</a>
+      <a href="categorii — Categorii _ Clase.html">Categorii</a>
+      <a href="galerie — Galerie foto_video.html" class="active">Galerie</a>
+      <a href="evenimente — Evenimente & Competiții.html">Evenimente</a>
+      <a href="echipament — Echipament & Materiale.html">Echipament</a>
+      <a href="istoric — Istorie detaliată.html">Istoric</a>
+      <a href="contact — Contact (formular).html">Contact</a>
+    </nav>
+  </header>
+
+  <aside class="sidebar">
+    <div>
+      <p class="sidebar-title">Pe această pagină</p>
+      <ul id="sidebar-anchors"></ul>
+    </div>
+    <div>
+      <p class="sidebar-title">Cronologie</p>
+      <ul class="timeline">
+        <li>
+          <div class="timeline-year">1936</div>
+          <div class="timeline-text">Prima fotografie publicitară a unui culturist apare în presa americană.</div>
+        </li>
+        <li>
+          <div class="timeline-year">1975</div>
+          <div class="timeline-text">Documentarul „Pumping Iron" cu Arnold Schwarzenegger popularizează global sportul.</div>
+        </li>
+        <li>
+          <div class="timeline-year">1985</div>
+          <div class="timeline-text">Primele transmisii TV ale Mr. Olympia ajung la milioane de telespectatori.</div>
+        </li>
+        <li>
+          <div class="timeline-year">2010</div>
+          <div class="timeline-text">YouTube devine platforma principală pentru conținut de culturism și fitness.</div>
+        </li>
+        <li>
+          <div class="timeline-year">2015</div>
+          <div class="timeline-text">Instagram transformă modul în care sportivii își prezintă progresul.</div>
+        </li>
+      </ul>
+    </div>
+  </aside>
+
+  <main>
+
+    <div class="page-title">
+      <p class="page-label">CurticiGym / Galerie</p>
+      <h1>Galerie foto &amp; video</h1>
+      <div class="accent-line"></div>
+      <p>
+        Imagini și resurse video reprezentative din lumea culturismului — sportivi de legendă,
+        competiții emblematice și antrenamente iconice.
+      </p>
+    </div>
+
+    <!-- SECȚIUNEA 1: Sportivi de legendă -->
+    <section>
+      <h2 id="sportivi-de-legenda">Sportivi de legendă</h2>
+      <p>
+        Acești culturiști au marcat istoria sportului, stabilind standarde de referință care
+        influențează generații întregi de atleți.
+      </p>
+
+      <div class="gallery-grid">
+        <!-- Item 1 -->
+        <div class="gallery-item"
+             data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Eugen_Sandow_by_Napoleon_Sarony.jpg/435px-Eugen_Sandow_by_Napoleon_Sarony.jpg"
+             data-caption="Eugene Sandow — Tatăl Culturismului Modern (1867–1925)">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Eugen_Sandow_by_Napoleon_Sarony.jpg/435px-Eugen_Sandow_by_Napoleon_Sarony.jpg"
+               alt="Eugene Sandow, fotografiat de Napoleon Sarony"
+               loading="lazy" />
+          <div class="caption">Eugene Sandow (1867–1925)</div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="gallery-item"
+             data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Arnold_Schwarzenegger_1974.jpg/440px-Arnold_Schwarzenegger_1974.jpg"
+             data-caption="Arnold Schwarzenegger — 7× Mr. Olympia (1970-1975, 1980)">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Arnold_Schwarzenegger_1974.jpg/440px-Arnold_Schwarzenegger_1974.jpg"
+               alt="Arnold Schwarzenegger, 1974"
+               loading="lazy" />
+          <div class="caption">Arnold Schwarzenegger — 7× Mr. Olympia</div>
+        </div>
+
+        <!-- Item 3: placeholder -->
+        <div class="gallery-item" data-src="" data-caption="Ronnie Coleman — 8× Mr. Olympia (1998–2005)">
+          <div class="gallery-placeholder">
+            <div class="icon">🏆</div>
+            <strong>Ronnie Coleman</strong>
+            <span>8× Mr. Olympia</span>
+          </div>
+          <div class="caption">Ronnie Coleman — 8× Mr. Olympia</div>
+        </div>
+
+        <!-- Item 4: placeholder -->
+        <div class="gallery-item" data-src="" data-caption="Dorian Yates — 6× Mr. Olympia (1992–1997)">
+          <div class="gallery-placeholder">
+            <div class="icon">💪</div>
+            <strong>Dorian Yates</strong>
+            <span>6× Mr. Olympia</span>
+          </div>
+          <div class="caption">Dorian Yates — 6× Mr. Olympia</div>
+        </div>
+
+        <!-- Item 5 -->
+        <div class="gallery-item"
+             data-src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Phil_Heath_2011_%28cropped%29.jpg/440px-Phil_Heath_2011_%28cropped%29.jpg"
+             data-caption="Phil Heath — 7× Mr. Olympia (2011–2017)">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Phil_Heath_2011_%28cropped%29.jpg/440px-Phil_Heath_2011_%28cropped%29.jpg"
+               alt="Phil Heath, 2011"
+               loading="lazy" />
+          <div class="caption">Phil Heath — 7× Mr. Olympia</div>
+        </div>
+
+        <!-- Item 6: placeholder -->
+        <div class="gallery-item" data-src="" data-caption="Lee Haney — 8× Mr. Olympia (1984–1991)">
+          <div class="gallery-placeholder">
+            <div class="icon">🥇</div>
+            <strong>Lee Haney</strong>
+            <span>8× Mr. Olympia</span>
+          </div>
+          <div class="caption">Lee Haney — 8× Mr. Olympia</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECȚIUNEA 2: Competiții -->
+    <section>
+      <h2 id="competitii">Competiții emblematice</h2>
+      <p>
+        Imagini din marile competiții de culturism care au definit sportul la nivel global.
+      </p>
+      <div class="gallery-grid">
+
+        <div class="gallery-item" data-src="" data-caption="Mr. Olympia — Las Vegas, arena principală">
+          <div class="gallery-placeholder">
+            <div class="icon">🎭</div>
+            <strong>Mr. Olympia</strong>
+            <span>Las Vegas, Nevada</span>
+          </div>
+          <div class="caption">Mr. Olympia — Las Vegas</div>
+        </div>
+
+        <div class="gallery-item" data-src="" data-caption="Arnold Classic — Columbus, Ohio">
+          <div class="gallery-placeholder">
+            <div class="icon">🌟</div>
+            <strong>Arnold Classic</strong>
+            <span>Columbus, Ohio</span>
+          </div>
+          <div class="caption">Arnold Classic — Ohio</div>
+        </div>
+
+        <div class="gallery-item" data-src="" data-caption="Campionatul Național de Culturism România">
+          <div class="gallery-placeholder">
+            <div class="icon">🇷🇴</div>
+            <strong>Campionatul Național</strong>
+            <span>România — FRCF</span>
+          </div>
+          <div class="caption">Campionatul Național — România</div>
+        </div>
+
+        <div class="gallery-item" data-src="" data-caption="Campionatul European IFBB">
+          <div class="gallery-placeholder">
+            <div class="icon">🇪🇺</div>
+            <strong>Europene IFBB</strong>
+            <span>Competiție anuală</span>
+          </div>
+          <div class="caption">Campionatul European IFBB</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECȚIUNEA 3: Antrenamente -->
+    <section>
+      <h2 id="antrenamente">Momente de antrenament</h2>
+      <p>
+        Imaginile de antrenament captează efortul și disciplina care stau la baza oricărui
+        fizic remarcabil. Aceste momente ilustrează metode de lucru caracteristice elitei.
+      </p>
+      <div class="gallery-grid">
+        <div class="gallery-item" data-src="" data-caption="Antrenament piept — press cu bara">
+          <div class="gallery-placeholder"><div class="icon">🏋️</div><strong>Press cu bara</strong><span>Antrenament piept</span></div>
+          <div class="caption">Press cu bara — piept</div>
+        </div>
+        <div class="gallery-item" data-src="" data-caption="Antrenament spate — tracțiuni cu greutăți">
+          <div class="gallery-placeholder"><div class="icon">🔱</div><strong>Tracțiuni</strong><span>Antrenament spate</span></div>
+          <div class="caption">Tracțiuni cu greutăți</div>
+        </div>
+        <div class="gallery-item" data-src="" data-caption="Squat — exercițiu fundamental pentru picioare">
+          <div class="gallery-placeholder"><div class="icon">⚡</div><strong>Squat</strong><span>Antrenament picioare</span></div>
+          <div class="caption">Squat — picioare</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECȚIUNEA 4: Resurse video -->
+    <section>
+      <h2 id="resurse-video">Resurse video recomandate</h2>
+      <p>
+        Documentarele și filmele de mai jos sunt esențiale pentru înțelegerea culturismului
+        ca sport, cultură și stil de viață.
+      </p>
+      <div class="card-grid">
+        <div class="card">
+          <span class="badge">Documentar</span>
+          <h3>Pumping Iron (1977)</h3>
+          <p>Cel mai influent documentar de culturism din toate timpurile. Îl urmărește pe Arnold Schwarzenegger și pe competitorii săi în pregătirea pentru Mr. Olympia 1975. A transformat sportul într-un fenomen cultural global.</p>
+        </div>
+        <div class="card">
+          <span class="badge">Documentar</span>
+          <h3>Generation Iron (2013)</h3>
+          <p>Un documentar modern care explorează era actuală a culturismului profesionist, cu accent pe Phil Heath și rivalii săi pentru titlul Mr. Olympia 2012.</p>
+        </div>
+        <div class="card">
+          <span class="badge">Film</span>
+          <h3>Bigger (2018)</h3>
+          <p>Povestea biopic a fraților Weider — fondatorii IFBB — și modul în care au construit imperiul culturismului modern în SUA postbelică.</div>
+        </div>
+        <div class="card">
+          <span class="badge">Documentar</span>
+          <h3>Ronnie Coleman: The King (2018)</h3>
+          <p>Povestea celui mai titrat campion Mr. Olympia din istorie, luptele sale cu rănile și sacrificiile ultime pentru a fi cel mai mare culturist al lumii.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Lightbox overlay -->
+  <div class="lightbox-overlay" id="lightbox-overlay">
+    <button class="lightbox-close" id="lightbox-close">&times;</button>
+    <div class="lightbox-content">
+      <img id="lightbox-img" src="" alt="Imagine mărită" />
+      <p class="lightbox-caption" id="lightbox-caption"></p>
+    </div>
+  </div>
+
+  <footer>
+    <span class="footer-logo">Curtici<span>Gym</span></span>
+    <span>&copy; 2025 Varga Edmund — Atestat Informatică, Clasa a XII-a</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
